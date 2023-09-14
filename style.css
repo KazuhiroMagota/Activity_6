@@ -1,0 +1,37 @@
+
+/* Style your .flex-container to utilize the flexbox model. */
+.flex-container {
+    display: flex;
+    background: gray;
+    flex-wrap: wrap;
+    /* Practice using align-items, flex-direction, and justify-content */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-item {
+    background: lightskyblue;
+    /* Give each .flex-item a padding and some margin. */
+    padding: 60px;
+    margin: 40px;
+
+
+}
+
+@media screen and (max-width: 600px) {
+   .flex-container {
+        display: flex;
+        background: black;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+    .flex-item {
+        font-size: 50px;
+        font-family:'Arial Narrow Bold', sans-serif;
+    }
+    
+}
